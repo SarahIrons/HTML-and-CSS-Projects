@@ -1,0 +1,7 @@
+<html>
+<!DOCTYPE html>
+<html> lang= "en"</html>
+<title> My First HTML Course </title>
+<p> "Hello, world!" </p>
+</body>
+</html>
