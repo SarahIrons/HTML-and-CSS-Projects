@@ -1,0 +1,60 @@
+<style> 
+@font-face {
+   font-family: Milkshake;
+   src: url(.\milkshake_3de45646d19b2839020f16d637766759.ttf);
+}
+
+.NavBar{
+    font-size: 30px;
+}
+
+ {
+   font-family: Milkshake;
+   font-size: 50px;
+}
+input[type=text], select {
+    font-size: 20px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    font-size: 20px;
+    width: 100%;
+    background-color: steelblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;  
+}
+textarea {
+width:100%;
+font-size: 20px;
+border-radius: 10px;
+padding: 12px 20px;  
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+
+span {
+    font-size: 50px;
+}
+
+</style>
+
+/*NOTES on styles: 
+1)Increased font sizes on nav bar
+2)On form--added padding and margin, made form fields max width across screen; made 'submit' button appear across screen
+3)updated 'span' font effect to match fonx size with rest of text in lines 81 and 82 of html document
+4) I had previously added the imported/downloaded font 'Milkshake' and included it on the CSS style sheet*/
