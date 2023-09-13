@@ -1,0 +1,10 @@
+
+
+footer {
+    display: flex;
+    align-items: center; 
+    font-weight:bold;
+    justify-content: center;
+}
+
+/* I used a Flexbox to render the centered alignment of the footer and my additional icon of the smiley face. It took adding both the align items and the justify content notations to get things to display appropriately. Including both of these items gave vertical and horizontal centering. The smiley icon was "off" and was showing as almost like a superscript when I didn't use both of these. I found the answer to this via google search and an answer on Quora.*/

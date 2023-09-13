@@ -1,0 +1,8 @@
+p {
+    background-color: blueviolet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+p:hover{
+    background-color: darkgoldenrod;
+    cursor:pointer;
+}

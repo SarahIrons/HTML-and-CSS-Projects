@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+  }
+.column {
+    float: left;
+    padding: 10px;
+    height:500px;
+    
+  }
+  
+  .left {
+    width: 20%;
+    color:navajowhite;
+    background-color:cadetblue;
+  }
+  
+  .right {
+    width: 80%;
+    color:paleturquoise;
+    background-color:gray;
+  }
