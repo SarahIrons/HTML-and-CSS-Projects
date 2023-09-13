@@ -2,7 +2,7 @@
 [Bootstrap Project: Movie Theater site](assignments/Bootstrap4_project/)
 This page is an example home page for a movie theater. It is styled using Bootstrap 4. It contains Bootstrap components: navbar, jumbotron, form, and cards.
 
-[HTML/CSS:Meditation Website ](assignments/Website_Project)
+[HTML/CSS:Meditation Website ](Website_Project)
 This is a home page for a meditation website. It is styled using CSS. It contains a navbar, image containers, and a form.
 
 [HTML/CSS: One-page website](/Website_Project)
