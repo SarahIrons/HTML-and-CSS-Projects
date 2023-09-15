@@ -13,5 +13,5 @@ This is a home page for a meditation website. It is styled using CSS. It contain
 ## [HTML/CSS: One-page website](assignments/One-Page_Website)
 This is an exercise using an imagined business, Yeti Sue Snow Cones. The page is styled with border effects and a contact form as well as an imported font (Milkshake true-type font).
 
-## [HTML/CSS: Portfolio Assignment](Portfolio_Website_Assignment)
+## [HTML/CSS: Portfolio Assignment](assignments/Portfolio_Website_Assignment)
 This is a mock-up of a software developer portfolio page. It features a video, navbar, image effects, and a functional email contact form via Formspree.
