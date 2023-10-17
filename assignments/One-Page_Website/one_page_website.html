@@ -4,45 +4,11 @@
 <html>
 <head>
 	<link rel="stylesheet" href="./CSS/one_page_website.css">
+	<script src="JS/one_page_website.js"defer></script>
+	
 <style> 
-@font-face {
-   font-family: Milkshake;
-   src: url(.\milkshake_3de45646d19b2839020f16d637766759.ttf);
-}
 
-* {
-   font-family: Milkshake;
-}
-
-.NavBar { 
-   display: block;
-    height: 50px;
-    line-height: 50px;
-    background-color: steelblue;
-	 
-}
-
-.NavBar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.NavBar li {
-    display:inline;
-
-}
-
-.NavBar li a {
-    display: inline-block;
-    text-align: center;
-    padding: 14px 16px;
-	color: snow;
-}
-#gallery img { 
- box-shadow: 14px 14px 0 -4px steelblue, 14px 14px 0 0 black;
- margin: 20px;
-}
-<!--resource for shadow effect on images:'https://chenhuijing.com/blog/css-card-shadow-effects/''-->
+/* <!--resource for shadow effect on images:'https://chenhuijing.com/blog/css-card-shadow-effects/''--> */
 
 </style>
 </head>
@@ -65,14 +31,14 @@
 
 	<p style="font-size: 50px">
 	Yeti Sue's treats are icy and her heart is warm!</p>
-	<img src="./Images/yeti_1.jpg">
+	<img src="./Images/yeti_1.jpg" alt= "light blue yeti, arms akimbo">
 <!--Gallery-->
 
 <h1>Gallery</h1>
 	<div id="gallery">
 	
 		<img src=".\Images\snow-cones_6.jpg" alt="white cat licking colorful snow cone"><br/>
-		<img src=".\Images\snow-cones_1.jpg" alt="five colorful snow cones in a wire carry basket"><br/>
+		<img src=".\Images\snow-cones_1.jpg" alt="five colorful snow cones in a wire basket"><br/>
 		<img src=".\Images\snow-cones_2.jpg" alt="manicured hand holding a blackberry snow cone with yellow straw"><br/>
 		<img src=".\Images\snow-cones_3.jpg" alt="hand holding an orange colored snow cone against backdrop of a blue sky"><br/>
 		<img src=".\Images\snow-cones_4.jpg" alt="hand offering a rainbow colored snow cone"><br/>
@@ -98,7 +64,7 @@ Lake Laylafort, Missouri<br/>
 	</address>
   Phone:&nbsp 800-555-4321<br/>
   
-<img src=".\Images\yeti_3.jpg">
+<img src=".\Images\yeti_3.jpg" alt="light blue yeti, in playful crouched position, smiling">
 <!--end contactsection-->
 	<ul>
 		<li><a href="#home" id="home_section">Home</li></a>
@@ -110,3 +76,95 @@ Lake Laylafort, Missouri<br/>
 <footer>
 	<p>Yeti Sue Snow Cones Incorporated &copy	<p>
 <footer>
+
+
+	<!-- Images used to open the lightbox -->
+<div class="row">
+	<div class="column">
+	  <img src="Images/snow-cones_6.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="white cat licking colorful snow cone">
+	</div>
+	<div class="column">
+	  <img src="Images/snow-cones_1.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="five colorful snow cones in a wire basket">
+	</div>
+	<div class="column">
+	  <img src="Images/snow-cones_2.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="manicured hand holding a blackberry snow cone with yellow straw">
+	</div>
+	<div class="column">
+	  <img src="Images/snow-cones_3.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="hand holding an orange colored snow cone against backdrop of a blue sky">
+	</div>
+	<img src="Images/snow-cones_4.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow" alt="hand offering a rainbow colored snow cone">
+</div>
+<img src="Images/snow-cones_5.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow" alt="hand holding a peach colored snow cone with mint garnish and orange and red striped straw">
+</div>
+	
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 6</div>
+		<img src="Images/snow-cones_6.jpg" alt="white cat licking colorful snow cone">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 6</div>
+		<img src="Images/snow-cones_1.jpg" alt="five colorful snow cones in a wire basket">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 6</div>
+		<img src="Images/snow-cones_2.jpg" alt="manicured hand holding a blackberry snow cone with yellow straw">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">4 /6 </div>
+		<img src="Images/snow-cones_3.jpg" alt="hand offering a rainbow colored snow cone">
+	  </div>
+
+	  <div class="mySlides">
+		<div class="numbertext">5 /6</div>
+		<img src="Images/snow-cones_4.jpg"  alt="hand offering a rainbow colored snow cone">
+	  </div>
+	  <div class="mySlides">
+		<div class="numbertext">6 /6</div>
+		<img src="Images/snow-cones_5.jpg" alt="hand holding a peach colored snow cone with mint garnish and orange and red striped straw">
+	  </div>
+  
+	  <!-- Next/previous controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Caption text -->
+	  <div class="caption-container">
+		<p id="caption">Yeti Sue brings the Snow to you!</p>
+	  </div>
+  
+	  <!-- Thumbnail image controls -->
+	 <div class="thumbnails"> 
+	  <div class="column thumbdot">
+		<img src="Images/snow-cones_6.jpg" onclick="currentSlide(1)" alt="white cat licking colorful snow cone">
+	  </div>
+  
+	  <div class="column thumbdot">
+		<img src="Images/snow-cones_1.jpg" onclick="currentSlide(2)" alt="Five colorful snow cones in a wire basket">
+	  </div>
+  
+	  <div class="column thumbdot">
+		<img src="Images/snow-cones_2.jpg" onclick="currentSlide(3)" alt="Manicured hand holding a blackberry snow cone with yellow straw">
+	  </div>
+  
+	  <div class="column thumbdot">
+		<img src="Images/snow-cones_3.jpg" onclick="currentSlide(4)" alt="Hand holding an orange colored snow cone against backdrop of a blue sky">
+	  </div>
+	  <div class="column thumbdot">
+		<img src="Images/snow-cones_4.jpg" onclick="currentSlide(5)" alt="Hand offering a rainbow colored snow cone">
+	  </div>
+	  <div class="column thumbdot">
+		<img src="Images/snow-cones_5.jpg" onclick="currentSlide(6)" alt="Hand holding a peach colored snow cone with mint garnish and orange and red striped straw">
+	  </div>
+	</div>
+	</div>
+  </div>
