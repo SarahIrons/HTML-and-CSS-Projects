@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width" />
         <title>Sarah Irons</title>
         <link rel="stylesheet" type="text/css" href="portfolio.css">
+        <script src="JS/portfolio.js" defer></script>
     </head>
 
         <body class="Background">
@@ -33,6 +34,41 @@
     </p>
 </div>
 
+<!-- GALLERY SLIDESHOW SECTION -->
+<div class="slideshow-container">
+    <h1>SKILLS</h1>
+    <div class="mySlides fade">
+        <img src="Portfolio images folder/icons1.png"  alt="logo for html css and JavaScript">
+        <div class="text">Image 1 of 4</div>
+    </div>
+    <div class="mySlides fade">
+        <img src="Portfolio images folder/icons2.png"  alt="logo for Python">
+        <div class="text">Image 2 of 4</div>
+    </div>
+    <div class="mySlides fade">
+        <img src="Portfolio images folder/icons3.png"  alt="logo for C sharp">
+        <div class="text">Image 3 of 4</div>
+    </div>
+    <div class="mySlides fade">
+        <img src="Portfolio images folder/icons4.png"  alt="logo for SQL">
+        <div class="text">Image 4 of 4</div>
+    </div>
+    <div class="slide-btns">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div class="dot-wrapper">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+</div>
+
+
+
+
+
 <!-- ABOUT SECTION -->
 <div class="Row" id="About">
     <!-- LEFT COLUMN -->
@@ -49,33 +85,34 @@
                 <br>
                 I've made this leap into the Tech field because I find it so fascinating and full of promise!
                 <br>
-                I hope to bring a unique perspective and amicable vibe to your project. 
-                <a href="#Contact"> Contact</a> me below!
+                I am ready to bring a unique perspective and amicable vibe to your project or organization! 
+                <a href="#Contact"> Contact</a> me below.
             </p>
     </div>
 </div>
 <!-- GITHUB SECTION -->
 <div class="Row" id="GitHub">
+
 <!-- LEFT COLUMN -->
     <div class="Column_1">
         <h1>GitHub</h1>
-            <p>
-            Here is a link to my Github profile:
-            <br>
             <p class="center"><a href="https://github.com/SarahIrons">Sarah Irons &#124 GitHub Profile</a>
             </p>
-    </div>
+    </div> 
+     
 <!-- RIGHT COLUMN -->
     <div class="Column_2">
-        <a hef="https://github.com/SarahIrons" target="_blank"></a> <img src ="Portfolio images folder/github_01.png" alt="Github icon" ></a>
+        <a href="https://github.com/SarahIrons"><img src ="Portfolio images folder/bluegit.png" alt="Github icon"></a></p>
+        <p>Contact</p>
 
     </div>
-</div>
+
+
 <!-- CONTACT SECTION -->
 <div class="Row" id="Contact">
     <!-- conact image left column -->
     <div class="Column_2 Column_tall">
-        <img src="Portfolio images folder/image_06.jpg" alt="Columbus Ohio circular icon image with subtle shadow below">
+        <a href="https://en.wikipedia.org/wiki/Columbus,_Ohio"><img src="Portfolio images folder/image_06.jpg" alt="Columbus Ohio circular icon image with subtle shadow below"></a>
     </div>
     <!--Contact form, right column-->
     <div class="Column_1 Column_tall">
@@ -83,20 +120,20 @@
         <form action="https://formspree.io/f/xzblgnln" method="POST"> 
             <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
             <label>Name:</label>
-                <input type="text" placeholder="Please enter your name here">
+                <input type="text" placeholder="Please enter your name here" required>
             <label>Email:</label>
-                <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                <input type="text" id="Email" name="Email" placeholder="Please enter your email here" required>
             <label>Message:</label>
-                <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                <input type="text" id="Message" name="Message" placeholder="Please write your message here" required>
                 <input type="submit" value="SUBMIT">
         </form>
         </div>
 </div>
 <!-- FOOTER SECTION -->
 <footer>
-    <p class="center">
-    Sarah Irons &#124 2023
-    </p>
+    <p class="center"> <a href= "mailto:sarahirons11@gmail.com">
+   Sarah Irons</a> &#124 2023
+</p>
 </footer>
     </body>
 </html>
