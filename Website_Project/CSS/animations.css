@@ -11,8 +11,9 @@
     text-decoration: none;
 }
 
+
 .menu li {
-    color:000;
+    color: #000;
     background-color:rgba(255, 255, 255, 1);
     display:inline-block;
     margin:0% auto;
@@ -22,42 +23,37 @@
     box-shadow:2px 2px 10px 0 rgba(0, 0, 0, 0.5);
     border-radius:6px;
     cursor:pointer;
-    transition-property: background;
+   
+}
+
+.menu li a {
+    transition-property: color;
     transition-duration:.4s;
-    transition-delay:0s;
     transition-timing-function:ease-in-out;
-}
-
-.menu li:hover {
-    color:orchid;
-    background-color: rgba(100,65,0,0,0.3);
 
 }
+.menu li:hover a {
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+
+
 
 .photo {
     position:relative;
-    line-height:0;
-    margin-bottom:2em;
     overflow:hidden;
-    border-radius: 8px;
-    padding:1px;
-    border: 1px solid #021a40;
-    background-color:#ff0;
-    box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.7);
+    height: 100%;
 }
 
 .photo-container {
     text-align: center;
-    margin:15px auto;
-    width:300px;
-    height:169px;
-
+    overflow:hidden;
 }
 
 .photo-container img {
     max-width:100%;
-    width:300px;
-    height:169px;
+    width:auto;
+    height:100%;
 }
 
 .photo-overlay {
@@ -72,20 +68,19 @@
     justify-content: center;
     align-items:center;
     background:rgba(0,0,0,0.5);
-
+    opacity: 0;
+    transition:opacity .5s;
+    cursor:pointer;
 }
 
+.photo-overlay p {
+    font-family: LaQatrie;
+}
 .white-head {
     color: #c9bdaa;
     margin-top:5%;
 }
 
-.photo-overlay {
-    opacity: 0;
-    transition:opacity .5s;
-    border-radius:10px;
-    cursor:pointer;
-}
 
 .photo-overlay:hover {
     opacity:1;
@@ -94,6 +89,7 @@
 .photo img {
     transition:transform .5s;
     transform-origin: 50% 50%;
+    
 
 }
 
